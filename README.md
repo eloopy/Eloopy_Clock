@@ -1,2 +1,5 @@
 # Eloopy_Clock
-ESP32 clock, based on the jump hour clock system.
+ESP32 based clock, it works like "jump hour" vintage clocks.
+Set time autamtically with daylight saving time zones
+Includes a self-hosted wep app for clock configuration.
+Programmed with Arduino IDE
