@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eloopy Clock v0.5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+  <div id="topnav">
+    <h1>Eloopy Clock v0.5</h1>
+  </div>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+
+        <h2>Select your network</h2>
+
+        <form id="NetList">
+
+          %NET% 
+
+        </form>        
+      
+
+        <form action="/wifiSet" method="GET">
+          <p>
+            <label for="ssid">SSID</label>
+            <input type="text" id ="ssid" name="ssid" %SSID%><br>
+            <label for="pass">Password</label>
+            <input type="text" id ="pass" name="pass" %PASS%><br>
+            <input type ="submit" value ="Submit">
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+          
+        </div>
+      </div>
+
+
+  </div>
+
+  <a href="/"><button class="menu">Back</button></a>
+</body>
+
+<script type="text/javascript">
+
+  function fillSSID(temp) {
+    document.getElementById("ssid").value = temp.value;
+   
+  }
+</script>
+
+
+
+</html>

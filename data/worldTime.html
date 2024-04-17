@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eloopy Clock v0.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="topnav">
+    <h1>Eloopy Clock v0.5</h1>
+  </div>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+        <form action="/cityset" method="GET">
+          <p>
+            <label for="city">City</label>
+            <input type="text" id ="city" name="city" %city%><br>
+
+            <input value="Barcelona" class="menu-city" onclick="setCity(this.value)" readonly>
+            <input value="Buenos Aires" class="menu-city" onclick="setCity(this.value)" readonly>
+            <input value="London" class="menu-city" onclick="setCity(this.value)" readonly>
+            <input value="New York" class="menu-city" onclick="setCity(this.value)" readonly>
+           
+            <br>
+            <br>
+            <br>
+
+            <input type ="submit" value ="Submit">
+          </p>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+  <a href="/"><button class="menu">Back</button></a>
+</body>
+
+
+<script>
+    function setCity(x){
+
+        document.getElementById('city').value=x;
+     }
+ </script>
+
+
+</html>
